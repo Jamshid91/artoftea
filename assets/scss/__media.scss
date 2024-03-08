@@ -1,0 +1,421 @@
+@media (max-width: 1350px) {
+    .main {
+        .banner {
+            .swiper-btn {
+                .banner-prev {
+                    left: -30px;
+                }
+                .banner-next {
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .main {
+        .banner {
+            .swiper-btn {
+                display: none;
+            }
+            &-item {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 16px;
+    }
+    .header {
+        &-logo {
+            .logo {
+                width: 180px;
+            }
+        }
+        &-search {
+          margin: 0 12px;
+        }
+        .shopping-cart-link {
+          margin: 0 12px;
+        }
+        .personal-area-link {
+          width: 110px;
+          height: 32px;
+        }
+        &-catalog {
+          margin-right: 20px;
+        }
+        &-nav {
+          li {
+            margin-right: 20px;
+          }
+        }
+    }
+
+    .main {
+        .banner {
+            &-item {
+                padding-right: 20px;
+            }
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+                width: 90%;
+            }
+            &__text {
+                width: 90%;
+            }
+            &__img {
+                width: 250px;
+            }
+            &__semicircle {
+                width: 90px;
+            }
+        }
+
+        .forYou {
+            margin: 24px 0;
+            &-box {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 16px;
+            }
+            &-item {
+              height: 165px;
+              padding: 16px;
+              .forYou__img {
+                height: auto;
+              }
+              .forYou__title {
+                font-size: 16px;
+                line-height: 18px;
+                width: 100%;
+              }
+            }
+        }
+        .forTea {
+            padding: 24px 0;
+        }
+        .reviews {
+            padding: 24px 0;
+            .swiper-reviews {
+                margin-top: 16px;
+            }
+        }
+
+        .tea-culture {
+            padding: 24px 0;
+        }
+        .articles {
+            padding: 24px 0;
+        }
+
+        .subscription {
+            padding: 24px 0;
+            &-form {
+              padding: 16px;
+              .form-info {
+                width: 100%;
+              }
+              .form {
+                width: 100%;
+                margin-top: 16px;
+                &__btn {
+                  min-width: 115px;
+                }
+              }
+            }
+          }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        .header-bottom-box {
+            position: static;
+        }
+        &-bottom {
+            padding: 0;
+        }
+        &-search {
+            margin-right: 16px;
+        }
+        &-catalog {
+          margin-right: 20px;
+          .header-catalog-mob {
+            padding: 0 20px 10px 5px;
+            .catalog-nav__close {
+                background: transparent;
+            }
+          }
+          &-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 12px 0;
+          }
+          .catalog-nav {
+            max-height: 95%;
+            padding: 16px;
+            padding-top: 0;
+            border-radius: 8px;
+            background: #fff;
+          }
+          .catalog {
+            width: 100%;
+          }
+          .catalog-item {
+            background: #F1F1F1;
+            border-bottom: 1px solid #fff;
+            &:first-child {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            &:last-child {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+          }
+        }
+    }
+
+    .main {
+        overflow: hidden;
+        .banner {
+            &-item {
+                padding-right: 10px;
+            }
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+                width: 90%;
+            }
+            &__text {
+                width: 90%;
+            }
+            &__img {
+                width: 190px;
+            }
+            &__btn {
+                height: 32px;
+                font-size: 14px;
+            }
+            &__semicircle {
+                width: 72px;
+                bottom: 10px;
+                right: -10px;
+            }
+        }
+
+        .forTea {
+            &-item {
+              width: 48.5%;
+            }
+          }
+    }
+
+    .footer {
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &-logo {
+            .logo {
+                width: 154px;
+            }
+        }
+    }
+
+    .main {
+        .title-text {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        .banner {
+            &-item {
+                flex-direction: column;
+            }
+            &__title {
+                width: 100%;
+            }
+            &-photo {
+                margin-left: auto;
+                margin-top: -15px;
+            }
+            &__text {
+                width: 100%;
+                margin-bottom: 0;
+            }
+            &__btn {
+                margin-top: -15px;
+            }
+        }
+
+        .types-tea {
+            padding: 24px 0;
+            .container {
+                padding: 0 0 0 16px;
+            }
+            &-item {
+                .tea-name {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        .bestsellers {
+            padding: 24px 0;
+            .swiper {
+              margin-top: 16px;
+            }
+            &-card {
+              padding: 0 8px 8px;
+              .bestsellers-img {
+                width: 100%;
+                height: 130px;
+                margin-bottom: 4px;
+                .img {
+                  max-height: 120px;
+                }
+              }
+              .hashtag {
+                width: 51px;
+                height: 22px;
+                background: #F03434;
+                font-size: 12px;
+                line-height: 13px;
+              }
+              .bestsellers-name {
+                font-size: 12px;
+                line-height: 14px;
+              }
+              .bestsellers-year {
+                font-size: 12px;
+                line-height: 14px;
+              }
+              .bestsellers-info {
+                margin: 12px 0 16px;
+                span {
+                  &:first-child {
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #F03434;
+                    del {
+                        color: #818698;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                  }
+                }
+              }
+              .add-basket {
+                height: 32px;
+                font-size: 14px;
+                line-height: 16px;
+              }
+            }
+          }
+          .forTea {
+            &-item {
+              padding: 16px;
+              margin-top: 16px;
+              height: 165px;
+              .forTea__img {
+                  height: 65%;
+              }
+              &:nth-child(1),
+              &:nth-child(4) {
+                width: 100%;
+                height: 100px;
+                .forTea__img {
+                    height: 100%;
+                }
+              }
+              .forTea__title {
+                font-size: 16px;
+                line-height: 18px;
+              }
+            }
+          }
+          .tea-culture {
+              &__text {
+                margin-top: 16px;
+              }
+              &__btn {
+                width: 100%;
+                font-size: 14px;
+                line-height: 15px;
+              }
+        }
+        .reviews {
+            .container {
+                padding: 0;
+                padding-left: 16px;
+            }
+        }
+        .articles {
+            .container {
+                &:last-child {
+                    padding: 0;
+                    padding-left: 16px;
+                }
+            }
+            .swiper-articles {
+                margin-top: 16px;
+            }
+        }
+
+        .subscription {
+            &-form {
+              .form__title {
+                font-size: 18px;
+                line-height: 20px;
+              }
+            }
+          }
+    }
+
+    .footer {
+        &-social {
+          margin-top: 32px;
+        }
+        &-body {
+          padding: 24px 0;
+        }
+        &-item {
+            width: 50%;
+            &:nth-child(3) {
+                margin-top: 24px;
+            }
+          &__title {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        &-sub {
+          margin-top: 24px;
+          &__title {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+}
+
+@media (max-width: 420px) {
+    
+}
