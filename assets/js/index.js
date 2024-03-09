@@ -1,16 +1,15 @@
-var listArray = ["slide1","slide2","slide3"];
-var banner = new Swiper('.swiper-banner', {
+const banner = new Swiper('.swiper-banner', {
     loop: true,
     autoplayDisableOnInteraction: false,
     slidesPerView: 1,        
     autoHeight: true,
     autoplay: {
-        delay: 3000,//animation과 시간 맞춰줘야함
+        delay: 3000,
     }, 
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: true
+    // },
     pagination: {
         el: '.swiper-pagination',
         clickable: 'true',

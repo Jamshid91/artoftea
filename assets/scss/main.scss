@@ -87,9 +87,9 @@ body {
           margin-right: 9px;
         }
         &:hover {
-          color: #468C25;
+          color: #357517;
           svg path {
-            fill: #468C25;
+            fill: #357517;
           }
         }
       }
@@ -102,7 +102,7 @@ body {
             margin-right: 0;
           }
           &:hover {
-            color: #468C25;
+            color: #357517;
           }
         }
       }
@@ -146,9 +146,9 @@ body {
         margin-right: 8px;
       }
       &:hover {
-        color: #009F07;
+        color: #357517;
         svg path {
-          fill: #009F07;
+          fill: #357517;
         }
       }
     }
@@ -164,8 +164,11 @@ body {
       font-size: 14px;
       line-height: 15px;
       &:hover {
-        background: #468C25;
         color: #fff;
+        background: #357517;
+      }
+      &:active {
+        background: #256407;
       }
     }
 
@@ -186,7 +189,10 @@ body {
         font-size: 14px;
         line-height: 15px;
         &:hover {
-          background: #009F07;
+          background: #357517;
+        }
+        &:active {
+          background: #256407;
         }
         svg {
           margin-right: 8px;
@@ -232,9 +238,9 @@ body {
           &-title {
             font-weight: 500;
             &:hover {
-              color: #009F07;
+              color: #357517;
               svg path {
-                fill: #009F07;
+                fill: #357517;
               }
             }
           }
@@ -246,7 +252,7 @@ body {
             color: #818698;
             margin-top: 8px;
             &:hover {
-              color: #009F07;
+              color: #357517;
             }
           }
         }
@@ -331,7 +337,10 @@ body {
         align-items: center;
         justify-content: center;
         &:hover {
-          background: #009F07;
+          background: #357517;
+        &:active {
+          background: #256407;
+        }
           svg path {
             fill: #fff;
           }
@@ -342,7 +351,8 @@ body {
       position: relative;
       overflow: hidden;
       &-item {
-        padding-right: 100px;
+        padding-right: 80px;
+        height: 400px;
       }
       &__title {
         font-size: 40px;
@@ -353,7 +363,7 @@ body {
       }
       &__text {
         margin: 10px 0 32px;
-        width: 75%;
+        width: 80%;
       }
       &__btn {
         width: 144px;
@@ -362,18 +372,16 @@ body {
         background: #468C25;
         color: #fff;
         &:hover {
-          background: #009F07;
+          background: #357517;
+        }
+        &:active {
+          background: #256407;
         }
       }
       &__img {
-        width: 359px;
         object-fit: contain;
         position: relative;
         z-index: 2;
-      }
-      &__semicircle {
-        bottom: 22px;
-        right: -16px;
       }
       .swiper-banner {
         padding: 26px 0;
@@ -449,22 +457,26 @@ body {
     }
 
     .view-all {
-      color: #468C25;
+      color: #357517;
       span {
         margin-right: 4px;
       }
       &:hover {
-        opacity: 0.9;
+        color: #357517;
       }
     }
 
     .types-tea {
-      padding: 40px 0 35px;
+      padding: 40px 0 0;
+      .swiper {
+        padding: 5px 10px 35px;
+      }
       &-item {
         .tea-img {
           width: 100%;
-          border-radius: 50px;
+          border-radius: 50%;
           object-fit: cover;
+          transition: .3s all;
         }
         .tea-name {
           position: absolute;
@@ -478,16 +490,18 @@ body {
           transition: .3s all;
         }
         &:hover {
-          .tea-name {
-            background: #468C25;
-            color: #fff;
+          .tea-img {
+            box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
           }
         }
       }
     }
 
     .bestsellers {
-      padding: 40px 0;
+      padding: 40px 0 0;
+      .swiper {
+        padding: 5px 10px 35px;
+      }
       .title-text {
         margin: 0;
       }
@@ -510,6 +524,7 @@ body {
         border-radius: 8px;
         padding: 16px;
         background: #fff;
+        transition: .3s all;
         .bestsellers-img {
           width: 100%;
           height: 150px;
@@ -568,8 +583,14 @@ body {
           position: relative;
           z-index: 3;
           &:hover {
-            background: #009F07;
+            background: #357517;
           }
+          &:active {
+            background: #256407;
+          }
+        }
+        &:hover {
+          box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
         }
       }
     }
@@ -587,10 +608,11 @@ body {
         border-radius: 4px;
         background: #fff;
         padding: 24px;
-        overflow: hidden;
+        transition: .3s all;
         .forYou__img {
           position: absolute;
           right: 0;
+          bottom: 0;
           height: 100%;
         }
         .forYou__title {
@@ -602,8 +624,9 @@ body {
           z-index: 3;
         }
         &:hover {
+          box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
           .forYou__title {
-            color: #468C25;
+            color: #357517;
           }
         }
       }
@@ -621,6 +644,7 @@ body {
         background: #fff;
         padding: 24px;
         margin-top: 24px;
+        transition: .3s all;
         .forTea__title {
           font-size: 20px;
           line-height: 23px;
@@ -633,14 +657,17 @@ body {
         }
         &:hover {
           .forTea__title {
-            color: #468C25;
+            color: #357517;
           }
+        }
+        &:hover {
+          box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
         }
       }
     }
 
     .reviews {
-      padding: 40px 0;
+      padding: 40px 0 0;
       .title-text {
         margin: 0;
       }
@@ -657,6 +684,7 @@ body {
       }
       .swiper-reviews {
         margin-top: 24px;
+        padding: 5px 10px 35px;
       }
 
       .review {
@@ -665,6 +693,11 @@ body {
         border-radius: 8px;
         background: #fff;
         padding: 16px;
+        transition: .3s all;
+        
+        &:hover {
+          box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
+        }
         .stars {
           svg {
             margin: 4px;
@@ -694,7 +727,7 @@ body {
           display: -webkit-box;
         }
         &__link {
-          color: #468C25;
+          color: #357517;
           &:hover {
             opacity: 0.9;
           }
@@ -720,8 +753,11 @@ body {
         background: #fff;
         margin-top: 16px;
         &:hover {
-          background: #468C25;
           color: #fff;
+          background: #357517;
+        }
+        &:active {
+          background: #256407;
         }
       }
       .tea-video {
@@ -757,12 +793,13 @@ body {
     }
 
     .articles {
-      padding: 40px 0;
+      padding: 40px 0 0;
       .title-text {
         margin: 0;
       }
       .swiper-articles {
         margin-top: 24px;
+        padding: 5px 10px 35px;
       }
       &__img {
         width: 100%;
@@ -786,13 +823,17 @@ body {
         overflow: hidden;
         width: 100%;
         min-height: 196px;
+        transition: .3s all;
+        &:hover {
+          box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.25);
+        }
         div {
           height: 80px;
           padding: 12px;
         }
         &:hover {
           .articles__text {
-            color: #468C25;
+            color: #357517;
           }
         }
       }
@@ -836,7 +877,10 @@ body {
             background: #468C25;
             border-radius: 0 4px 4px 0 ;
             &:hover {
-              background: #009F07;
+              background: #357517;
+            }
+            &:active {
+              background: #256407;
             }
           }
         }
@@ -857,6 +901,16 @@ body {
       &__call {
         font-weight: 500;
         color: #357517;
+        &:hover {
+          color: #468C25;
+        }
+      }
+    }
+    &-call {
+      font-weight: 500;
+      color: #357517;
+      &:hover {
+        color: #468C25;
       }
     }
     &-social {
@@ -873,7 +927,10 @@ body {
           margin-right: 0;
         }
         &:hover {
-          background: #D0D0D0;
+          background: #C0DCB3;
+        }
+        &:active {
+          background: #B0D1A0;
         }
       }
     }
@@ -891,7 +948,7 @@ body {
         color: #818698;
         margin-bottom: 8px;
         &:hover {
-          color: #468C25;
+          color: #357517;
         }
         &:last-child {
           margin: 0;
@@ -899,7 +956,7 @@ body {
       }
     }
     &-call {
-      color: #468C25;
+      color: #357517;
       font-weight: 500;
     }
     &-sub {
