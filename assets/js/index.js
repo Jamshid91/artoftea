@@ -1,7 +1,8 @@
 const banner = new Swiper('.swiper-banner', {
     loop: true,
     autoplayDisableOnInteraction: false,
-    slidesPerView: 1,        
+    slidesPerView: 1,   
+    spaceBetween: 16,     
     autoHeight: true,
     autoplay: {
         delay: 3000,
