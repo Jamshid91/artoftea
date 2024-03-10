@@ -1716,6 +1716,13 @@ input, textarea, select, button,
   .main .types-tea .container {
     padding: 0 0 0 16px;
   }
+  .main .types-tea .swiper {
+    padding: 0;
+  }
+  .main .types-tea-item:hover .tea-img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .main .types-tea-item .tea-name {
     font-size: 14px;
     line-height: 16px;
@@ -1725,9 +1732,14 @@ input, textarea, select, button,
   }
   .main .bestsellers .swiper {
     margin-top: 16px;
+    padding: 0;
   }
   .main .bestsellers-card {
     padding: 0 8px 8px;
+  }
+  .main .bestsellers-card:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .main .bestsellers-card .bestsellers-img {
     width: 100%;
@@ -1801,12 +1813,24 @@ input, textarea, select, button,
     padding: 0;
     padding-left: 16px;
   }
+  .main .reviews .swiper {
+    padding: 0;
+  }
+  .main .reviews .review:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .main .articles .container:last-child {
     padding: 0;
     padding-left: 16px;
   }
   .main .articles .swiper-articles {
     margin-top: 16px;
+    padding: 0;
+  }
+  .main .articles-card:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .main .subscription-form .form__title {
     font-size: 18px;
