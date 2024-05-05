@@ -21,9 +21,6 @@ catalogNavClose.addEventListener('click', () => {
     body.classList.remove('bodyStopScroll')
 });
 
-document.addEventListener('click', function (e) {
-    catalogBtn.parentElement.contains(e.target)||catalogBtn.parentElement.classList.remove('showCatalogNav')
-});
 
 callBtn.addEventListener('click', () => {
     popUpSocial.classList.remove('d-none')
@@ -32,3 +29,19 @@ callBtn.addEventListener('click', () => {
 socialCloseBtn.addEventListener('click', () => {
     popUpSocial.classList.add('d-none')
 });
+
+const cartBtn = document.querySelector('.shopping-cart__btn');
+
+cartBtn.addEventListener('click', () => {
+    cartBtn.parentElement.classList.toggle('showCart')
+});
+
+
+const likes = document.querySelectorAll('.like');
+
+likes.forEach(like => {
+    like.addEventListener('click', () => {
+        like.classList.toggle('liked')
+    })
+})
+
