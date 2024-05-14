@@ -6,30 +6,6 @@ shareBtn.addEventListener('click', () => {
 });
 
 
-const sale = document.querySelector('.order .sale-head');
-
-sale.addEventListener('click', () => {
-  sale.parentElement.classList.toggle('showSale')
-})
-
-
-const promoCode = document.querySelector('.promoCode-inp'),
-      promoCodeBtn = document.querySelector('.promoCode-btn');
-
-
-promoCode.addEventListener('input', () => {
-  promoCodeBtn.removeAttribute('disabled');
-  if(promoCode.value == '') {
-    promoCode.nextElementSibling.children[0].classList.add('d-none')
-  }
-});
-
-promoCodeBtn.addEventListener('click', () => {
-  if(promoCode.value != '') {
-    promoCode.nextElementSibling.children[0].classList.remove('d-none')
-  }
-});
-
 
 const gift = document.querySelector('.gift-head'),
       giftBox = document.querySelector('.gift'),
@@ -46,16 +22,62 @@ chooseGifts.forEach(btn => {
     giftBox.classList.add('d-none');
     giftProduct.classList.remove('d-none');
   })
-})
+});
+
+
+// scroll order btn
+const checking = document.querySelector('.promoCode');
+const scrolling = document.querySelector('.scroll-orderBtn');
+
+window.addEventListener('scroll', () => { 
+    const position = checking.getBoundingClientRect().top;
+
+    const screenPosition = window.innerHeight / 2;
+
+    if(screenPosition > position) {
+        scrolling.classList.remove('d-flex')
+      } else {
+        scrolling.classList.add('d-flex')
+      }
+});
+
+
       
-      
-      
-      
-      
-      
-      
-      
-      
+const orders = new Swiper('.swiper-orders', {
+  loop: false,
+  breakpoints: {
+      0: {
+        slidesPerView: 1.1,
+        spaceBetween: 12,
+      },
+      768: {
+        slidesPerView: 1.5,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+}
+
+});
+
+const orders_body = new Swiper('.swiper-orders-body', {
+  loop: false,
+  breakpoints: {
+      0: {
+        slidesPerView: 3.15,
+        spaceBetween: 4,
+      },
+      768: {
+        slidesPerView: 4.2,
+      },
+      991: {
+        slidesPerView: 5.3,
+        spaceBetween: 8,
+      },
+}
+
+});  
       
       
       
