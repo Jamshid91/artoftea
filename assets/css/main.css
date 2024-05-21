@@ -4101,13 +4101,21 @@ input, textarea, select, button,
   .main .product-card .product-name {
     font-size: 12px;
     line-height: 14px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
   .main .product-card .product-year {
     font-size: 12px;
     line-height: 14px;
   }
   .main .product-card .product-info {
-    margin: 12px 0 16px;
+    margin: 4px 0;
+    align-items: start !important;
+    flex-direction: column;
   }
   .main .product-card .product-info span:first-child {
     font-size: 16px;
@@ -4118,6 +4126,9 @@ input, textarea, select, button,
     color: #818698;
     font-size: 14px;
     line-height: 16px;
+  }
+  .main .product-card .product-info .count {
+    margin-top: 12px;
   }
   .main .product-card .add-basket {
     height: 32px;

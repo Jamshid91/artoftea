@@ -734,13 +734,21 @@
             .product-name {
               font-size: 12px;
               line-height: 14px;
+              overflow-wrap: break-word;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              display: -webkit-box;
             }
             .product-year {
               font-size: 12px;
               line-height: 14px;
             }
             .product-info {
-              margin: 12px 0 16px;
+              margin: 4px 0;
+              align-items: start !important;
+              flex-direction: column;
               span {
                 &:first-child {
                   font-size: 16px;
@@ -752,6 +760,9 @@
                       line-height: 16px;
                   }
                 }
+              }
+              .count {
+                margin-top: 12px;
               }
             }
             .add-basket {
