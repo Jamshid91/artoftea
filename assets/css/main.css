@@ -656,11 +656,15 @@ input, textarea, select, button,
 .main .view-all:hover {
   color: #357517;
 }
+.main .swiper {
+  max-width: 1180px;
+  padding: 0 20px;
+}
 .main .types-tea {
   padding: 40px 0 0;
 }
 .main .types-tea .swiper {
-  padding: 5px 10px 35px;
+  padding: 5px 20px 35px;
 }
 .main .types-tea-item .tea-img {
   width: 100%;
@@ -690,7 +694,7 @@ input, textarea, select, button,
 .main .bestsellers .swiper,
 .main .you-watched .swiper,
 .main .recommend .swiper {
-  padding: 5px 10px 35px;
+  padding: 5px 20px 35px;
 }
 .main .bestsellers .title-text,
 .main .you-watched .title-text,
@@ -910,7 +914,7 @@ input, textarea, select, button,
 }
 .main .reviews .swiper-reviews {
   margin-top: 24px;
-  padding: 5px 10px 35px;
+  padding: 5px 20px 35px;
 }
 .main .reviews .review {
   width: 100%;
@@ -1016,7 +1020,7 @@ input, textarea, select, button,
 }
 .main .articles .swiper-articles {
   margin-top: 24px;
-  padding: 5px 10px 35px;
+  padding: 5px 20px 35px;
 }
 .main .articles__img {
   width: 100%;
@@ -1066,7 +1070,7 @@ input, textarea, select, button,
   color: #357517;
 }
 .main .articles .swiper-articles-popular {
-  padding: 24px 5px 20px;
+  padding: 24px 20px 20px;
 }
 .main .articles .swiper-popular {
   position: relative;
@@ -1577,7 +1581,7 @@ input, textarea, select, button,
   overflow: hidden;
 }
 .main .card .card-box .card-slider .big-card .swiper-slide {
-  padding: 5px;
+  padding: 5px 20px;
 }
 .main .card .card-box .card-slider .big-card .btn-size {
   position: absolute;
@@ -1611,7 +1615,7 @@ input, textarea, select, button,
   border: 2px solid #DBE9D4;
   overflow: hidden;
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3505,6 +3509,9 @@ input, textarea, select, button,
   .container {
     padding: 0 16px;
   }
+  .swiper {
+    padding: 0 16px;
+  }
   .header-logo .logo {
     width: 180px;
   }
@@ -4054,7 +4061,7 @@ input, textarea, select, button,
     padding: 0 0 0 16px;
   }
   .main .types-tea .swiper {
-    padding: 0;
+    padding: 0 16px;
   }
   .main .types-tea-item:hover .tea-img {
     box-shadow: none;
@@ -4072,7 +4079,7 @@ input, textarea, select, button,
   .main .you-watched .swiper,
   .main .recommend .swiper {
     margin-top: 16px;
-    padding: 0;
+    padding: 0 16px;
   }
   .main .product-card {
     padding: 20px 8px 8px;
@@ -4167,7 +4174,7 @@ input, textarea, select, button,
     padding-left: 16px;
   }
   .main .reviews .swiper {
-    padding: 0;
+    padding: 0 16px;
   }
   .main .reviews .review:hover {
     box-shadow: none;
